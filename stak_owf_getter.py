@@ -3,7 +3,7 @@ import requests
 from pprint import pprint
 
 
-class SrakOwerFlowSimpleClient:
+class StakOwerFlowSimpleClient:
     
     def get_question(self,fromdate, todate, tag):
         parametrs = {
@@ -37,7 +37,7 @@ class SrakOwerFlowSimpleClient:
 
 
 if __name__ == '__main__':
-    client = SrakOwerFlowSimpleClient()
+    client = StakOwerFlowSimpleClient()
     request = client.get_two_day_last_question('python')
     out = [line['title'] for line in request]
-    pprint(out)
+    print(len(out))
