@@ -6,7 +6,6 @@ from super_hero import SuperHero
 token = ''
 
 def main():
-
     cloud = YaDrive(token, '/test_app/') 
     with open('smartest_super_hero.txt', 'w', encoding='utf-8') as f:
         sh = SuperHero()
